@@ -4,14 +4,9 @@
 
 class Game { // CREATING GAME GLASS. (Entire Javascript file is this one class)
     constructor() {
-        this.missed = 0
-        this.phrases = this.createPhrases();
-        this.activePhrase = null
-        // Track the number of missed guesses, initially set to 0
-        // Store array of phrases
-        // Initially there is no phrase chosen
-
-
+        this.missed = 0      // Track the number of missed guesses, initially set to 0
+        this.phrases = this.createPhrases();  // Store array of phrases
+        this.activePhrase = null  // Initially there is no phrase chosen
     }
 
     createPhrases() {
@@ -23,7 +18,6 @@ class Game { // CREATING GAME GLASS. (Entire Javascript file is this one class)
             new Phrase("anything is possible")
         ]
         return phrases
-
     }
 
     // method that selects a random phrase
